@@ -1,0 +1,68 @@
+Estrutura de Dados, Listas, Filas, Pilhas e Árvores Binárias
+
+Estrutura de Dados
+Estruturas de dados são um meio de armazenar e organizar as informações na memória do computador de maneira a proporcionar agilidade e manipulação segura dos dados, de forma abstrata, mantendo sua integridade  e semelhança com o mundo real. Variáveis, vetores, filas e pilhas, são exemplos de abstração do mundo real que nos permitem organizar as informações em linguagens de computador, permitindo o gerenciamento da vida real através dos softwares.
+
+Dados   
+São as informações a serem representadas, armazenadas ou manipuladas dentro de variáveis ou atributos de objetos.
+
+Tipos de Dados 
+ São um conjunto de valores que uma constante, variável, ou expressão pode assumir, ou então um conjunto de valores que possam ser gerados por uma classe.
+Na definição de uma variável, constante, expressão ou método deve-se definir o tipo de dado, por algumas razões: 
+ 1) Representar um tipo abstrato de dado (Realidade); 
+ 2) Delimitar a faixa de abrangência (Limites); 
+ 3) Definir a quantidade de bytes para armazenamento; 
+4) E as operações que podem ser efetuadas. 
+Os tipos de dados podem ser: Primitivos ou Estruturados, sendo que os estruturados, são chamados de Complexos.
+
+Tipos de Dados Primitivos
+São os tipos de dados que, além de depender das características do sistema, dependem também do processador. Alguns exemplos de tipos de dados primitivos são: char, byte, short, int, long, float, double e boolean.
+Char: Caractere em notação Unicode de 16 bits. Serve para armazenar dados alfanuméricos. Também pode ser usado como um dado inteiro com valores na faixa entre 0 e 65535.
+Byte: Inteiro de 8 bits em notação de complemento de dois. Pode assumir valores entre -27=-128 e 27-1=127.
+Short: Inteiro de 16 bits em notação de complemento de dois. Os valores possíveis cobrem a faixa de -2-15=-32.768 a 215-1=32.767.
+Int: Inteiro de 32 bits em notação de complemento de dois. Pode assumir valores entre -231=2.147.483.648 e 231-1=2.147.483.647.
+Long: Inteiro de 64 bits em notação de complemento de dois. Pode assumir valores entre -263 e 263-1.
+Float: Representa números em notação de ponto flutuante normalizada em precisão simples de 32 bits em conformidade com a norma IEEE 754-1985. O menor valor positivo representável por esse tipo é 1.40239846e-46 e o maior é 3.40282347e+38.
+Double: Representa números em notação de ponto flutuante normalizada em precisão dupla de 64 bits em conformidade com a norma IEEE 754-1985. O menor valor positivo representável é 4.94065645841246544e-324 e o maior é 1.7976931348623157e+308.
+Boolean: Pode assumir o valor true ou o valor false.
+
+String
+Strings são utilizadas frequentemente em várias linguagens de programação. Embora, em Java, Strings sejam uma sequência de caracteres, e não um array de caracteres, String não é um tipo de dado, como os mencionados anteriormente, mas sim uma classe e suas variáveis são, na verdade, objetos dessa classe.
+Por tratar-se de uma classe, o "tipo" de dado String possui alguns métodos. Podemos citar como exemplo o método "length()". Seu uso pode ser aplicado da seguinte forma: "String exemplo = 'exemplo'; return exemplo.length();". Nesta breve amostragem, retorna um valor inteiro, representando a quantidade de letras contido em 'exemplo', no caso 7.
+
+Tipos de Dados Complexos/Customizados
+A partir dos tipos de dados primitivos podemos criar outros tipos de dados utilizando uma combinação de variáveis. São estruturas de dados, classes, vetores, matrizes, etc.
+Uma classe chamada Carro é um tipo de dado que agrupa outras variáveis primitivas como marca, cor, ano, modelo, etc. Um vetor é um agrupamento de variáveis unidimensional, já uma matriz refere-se a um agrupamento de vetores, podendo ser assim multidimensional. A base de todos os tipos de dados são os tipos de dados primitivos, independente da linguagem de programação.
+Os tipos de dados complexos ou costumizados, obtidos contemplando a utilização dos definidos como primitivos, costumam ser classificados da seguinte forma:
+Cadeia de Caracteres
+Agregados Homogêneos
+Tipo de Dado Classe
+
+
+Cadeia de Caracteres
+Uma cadeia de caracteres ou char são uma sequência de caracteres, geralmente utilizada para representar palavras, frases ou textos de um programa. Costumam ser expressas na forma literal, mas sua utilização é normalmente aplicada através de atributos de um objeto ou variáveis.
+
+Agregados Homogêneos
+Representam uma sequência de dados do mesmo tipo que pode ser associada à um único identificador (Primitivo ou Complexo).
+Unidimensionais - Também conhecido como vetor.
+Multidimensionais - O mais utilizado é o agregado bidimensional, também conhecido como Matriz.
+Exemplo de uso:
+vetor = new int[70];
+matriz = new double[10][20];
+Tipo de Dado Classe
+Existem milhares de classes disponíveis na API do Java e todas são tipos de dados, porém uma classe pode armazenar diversos dados ao mesmo tempo em seus atributos, e realizar tarefas através de seus métodos, ao contrário de um tipo primitivo, que por outro lado, só armazena um único dado e não contém quaisquer métodos para realizar tarefas. Podemos destacar com exemplo a classe "String".
+ 
+Identificadores
+Um nome de variável, assim como nome de um método, classe, ou rótulo e dezenas de outros itens lexicográficos, constituem o que é chamado "identificador". Uma vez declarado, um identificador representa sempre o mesmo objeto a ele associado, em qualquer contexto em que seja empregado.
+As seguintes regras regem a criação de identificadores:
+O primeiro caracter de um identificador deve ser uma letra. Os demais caracteres podem ser quaisquer seqüências de numerais e letras
+Não apenas os numerais e letras latinas podem ser empregadas, como também letras de quaisquer outro alfabeto
+Devido a razões históricas, o underscore  "_" e o sinal de dolar "$" são considerados letras e podem ser usados nos identificadores
+Assim como em outras linguagens, como C e C++, os identificadores distinguem o tipo de caixa das letras, isto é, as maiúsculas são consideradas distintas das minúsculas. Isso significa que $variavel é um identificador diferente de $Variavel.
+Os identificadores não podem ser palavras reservadas, como: class, for, while, public, etc.
+
+Lista
+Uma lista é uma sequência finita de elementos ligados entre si, em que, cada elemento (ou nó) da lista possui um atributo com o valor do elemento e um atributo com uma referência para o próximo elemento da lista.
+A ordem dos elementos na lista é relevante. Uma lista pode ser ordenada ou não-ordenada. As operações referentes a elas dependem da organização, pois o tipo de manipulação de uma lista ordenada não é o mesmo de uma lista desordenada. Um exemplo é a inserção de um novo elemento. Numa lista ordenada sob algum critério, a inserção só pode ocorrer num determinado lugar, enquanto que numa lista desordenada, ela pode ocorrer  em qualquer lugar.
+Em linguagens de programação, os elementos de uma lista são todos do mesmo tipo de dado.,
+utilizar as classes fila queue e pilha stek para exemplificar.
